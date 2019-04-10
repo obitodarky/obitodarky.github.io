@@ -3,25 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>obitodarky</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <style>
-
-    </style>
-</head>     
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+</head>
 <body>
-    <div class="row">
-        <div class="col xs-6">    
-        <a href="http://www.avatarsinpixels.com/"><img src="../obitodarky.github.io/Assets/images/avatar.png"></a>
-       </div>
-       <div class="col xs-6"> 
-        <i class="fa fa-steam-square"><a href="store.steampowered.com"></a></i> Steam  </div>
-   </div>
-
-
+    <a-scene>
+        <a-assets>
+            <img id="nuv-entrance" src="assets/nuv-entrance.jpg">
+        </a-assets>
+        <a-sky src = "#nuv-entrance"></a-sky>
+    </a-scene>        
 </body>
 </html>
