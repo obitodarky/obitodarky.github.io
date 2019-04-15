@@ -10,9 +10,20 @@
 <body>
     <a-scene>
         <a-assets>
+            <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+
             <img id="nuv-amphitheatre" src="assets/nuv-amphitheatre.jpg">
+            <img id="cubes-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
         </a-assets>
-        <a-sky src = "#nuv-amphitheatre"></a-sky>   
+        <a-sky src = "#nuv-amphitheatre"></a-sky>  
+        
+        <a-entity
+            class="link"
+            geometry="primitive: plane; height: 1; width: 1"
+            material="shader: flat; src: #cubes-thumb"
+            sound="on: click; src: #click-sound">
+        </a-entity>
+        
         <a-camera>
             <a-cursor
               id="cursor"
