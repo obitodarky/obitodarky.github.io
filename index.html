@@ -16,7 +16,12 @@
         </a-assets>
         <a-sky src = "#nuv-amphitheatre"></a-sky>  
         
-        <a-entity id="plane" position="-1 1 -3" geometry="primitive: plane" material="color: grey"></a-entity>
+        <a-entity 
+            id="plane" position="-1 1 -3" 
+            geometry="primitive: plane" 
+            material="color: grey"
+            sound="src: #click-sound; volume: 0.9">
+        </a-entity>
 
         <a-camera>
             <a-cursor
