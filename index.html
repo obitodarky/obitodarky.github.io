@@ -9,6 +9,9 @@
     <!-- rotation: use the right hand rule for reference at each axis-->
     <!-- relative rotation,scale positioning can be applied on children-->
     <a-scene background="color: #050e20">
+      <a-assets>
+        <img id="dp" src="assets/photo.jpeg">
+      </a-assets>
       <a-box 
       color="#cb175e"
       width="5"
@@ -29,6 +32,7 @@
       radius="0.5"
       side="double"
       scale="1 1 1"
+      src="photo.jpeg"
       position="0 0 0.11">
 
       </a-circle>
@@ -46,25 +50,19 @@
       width="5.3"
       height="3.3"
       depth="0.2"
-      opacity="0.1"
+      opacity="0.2"
       position="0 0 0"
       scale="1 1 1">
 
       </a-box>
       </a-box>
 
-      <a-cylinder 
-      color="#24caff"
-      width="0.4"
-      height="0.5"
-      depth="0.3"
-      radius="0.4"
-      segments-radial="5"
-      open-ended="true"
-      side="double"> 
+      <a-image
+      src="#dp">
 
-      </a-cylinder>
+      </a-image>
     </a-scene>
+    
   </body>
 
 
