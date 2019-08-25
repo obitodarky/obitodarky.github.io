@@ -5,13 +5,16 @@
   </head>
 
   <body>
+    
     <!-- everything in In meters -->
     <!-- rotation: use the right hand rule for reference at each axis-->
     <!-- relative rotation,scale positioning can be applied on children-->
     <a-scene background="color: #050e20">
       <a-assets>
         <img id="dp" src="assets/photo.jpg">
+        <audio id="background" src="assets/background.wav" preload="auto"></audio>
       </a-assets>
+      <a-sound src="assets/background.wav" autoplay="true" position="0 2 5"></a-sound>
       <a-box 
       color="#cb175e"
       width="5"
