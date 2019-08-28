@@ -15,7 +15,6 @@
         <audio id="background" src="assets/background.wav" preload="auto"></audio>
         <audio id="click" src="assets/click.m4a" preload="auto"></audio>
       </a-assets>
-      <a-sound src="#background" autoplay="true" loop="true"></a-sound>
       <a-box
       width="0.5"
       height="0.5"
@@ -35,7 +34,10 @@
               animation="property: rotation; to: 90 360 80; loop: true; dur:3000; easing: linear"></a-box>
     </a-entity>
     <a-camera>
+      <a-cursor opacity="0">
           <a-sound src="#background" autoplay="true" loop="true"></a-sound>
+      </a-cursor>
+          
     </a-camera>
  
     
