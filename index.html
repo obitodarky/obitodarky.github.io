@@ -13,8 +13,8 @@
       <a-assets>
         <img id="dp" src="assets/photo.jpg">
         <audio id="background" src="assets/spaceship.flac" preload="auto"></audio>
-        <audio id="birds" src="assets/birds.wav" preload="auto"></audio>
-        <audio id="waves" src="assets/waves.wav" preload="auto"></audio>
+        <audio id="birds" src="assets/birds.mp3" preload="auto"></audio>
+        <audio id="waves" src="assets/waves.mp3" preload="auto"></audio>
         <audio id="rain" src="assets/rain.wav" preload="auto"></audio>
       </a-assets>
       <a-box
@@ -36,9 +36,11 @@
               animation="property: rotation; to: 90 360 80; loop: true; dur:3000; easing: linear"></a-box>
     </a-entity>
       <a-sound src="#rain" autoplay="true" loop="true"></a-sound>
+      <a-sound src="#birds" autoplay="true" loop="true"></a-sound>
+      <a-sound src="#waves" autoplay="true" loop="true"></a-sound>
     <a-camera>
       <a-cursor opacity="0">
-          <a-sound src="#background" autoplay="true" loop="true" volume="0.25"></a-sound>
+          <a-sound src="#background" autoplay="true" loop="true" volume="0.35"></a-sound>
       </a-cursor>
     </a-camera>
   
