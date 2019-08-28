@@ -17,33 +17,45 @@
         <audio id="waves" src="assets/waves.mp3" preload="auto"></audio>
         <audio id="rain" src="assets/rain.wav" preload="auto"></audio>
       </a-assets>
+      <a-entity 
+      rotation="0 0 0" >
       <a-box
-      width="0.5"
-      height="0.5"
-      depth="0.5"
-      position="6 5 -15"
+      width="0.2"
+      height="0.2"
+      depth="0.2"
+      position="2 2.5 -5"
       animation="property: rotation; to: 360 360 80; loop: true; dur:3000; easing: linear">
 
         </a-animation>
     </a-box>
-      <a-entity 
-      rotation="0 0 0" >
               <a-box
-              width="0.5"
-              height="0.5"
-              depth="0.5"
-              position="-6 7 -15"
+              width="0.2"
+              height="0.2"
+              depth="0.2"
+              position="-1 2.5 -5"
               animation="property: rotation; to: 90 360 80; loop: true; dur:3000; easing: linear"></a-box>
     </a-entity>
+    <a-entity position="0 1.6 -5">
+      <a-text value="FIND THE SOUND" color= "#2779cd" width="10" height="10" position="-1.5 3 0"></a-text>
+      <a-text value="Please Use Headphones" position="-1 2 0" opacity="0.5"></a-text>
+      <a-text value="There are 3 sounds" position="-0.5 -0.4 0" opacity="0.5"></a-text>
+      <a-text value="hidden in this infinite 3D world." position="-1 -0.8 0" opacity="0.5"></a-text>
+      <a-text value="Find them, and enjoy the 3D expeirence." position="-1.5 -1.2 0" opacity="0.5"></a-text>
+      <a-text value="Good Luck." position="0 -1.6 0" opacity="0.5s"></a-text>
+    </a-entity>
+    <a-text width="2" height="2" value="Wait. What is that Sound?" position="-0.5 1.6 -10" opacity="0.5"></a-text>
+    <a-text width="2" height="2" value="It's the sound of your Ship of Imagination!" position="-0.5 2.0 -15" opacity="0.5"></a-text>
+    <a-text width="2" height="2" value="It will be your companion " position="-0.5 1.6 -15" opacity="0.5"></a-text>
+    <a-text width="2" height="2" value="for the rest of the journey" position="-0.5 1.4 -15" opacity="0.5"></a-text>
       <a-sound src="#rain" autoplay="true" loop="true" position="0 1.6 -30"></a-sound>
       <a-sound src="#birds" autoplay="true" loop="true" position="0 1.6 -60"></a-sound>
       <a-sound src="#waves" autoplay="true" loop="true" position="0 1.6 -90"></a-sound>
     <a-camera>
       <a-cursor opacity="0">
-          <a-sound src="#background" autoplay="true" loop="true" volume="0.35"></a-sound>
+          <a-sound src="#background" autoplay="true" loop="true" volume="0.4"></a-sound>
       </a-cursor>
     </a-camera>
-  
+    
     </a-scene>
     
   </body>
