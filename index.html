@@ -21,8 +21,7 @@
       height="0.5"
       depth="0.5"
       position="6 5 -15"
-      animation="property: rotation; to: 360 360 80; loop: true; dur:3000; easing: linear"
-      sound="src: #click; volume: 2; on: click">
+      animation="property: rotation; to: 360 360 80; loop: true; dur:3000; easing: linear">
 
         </a-animation>
     </a-box>
@@ -35,7 +34,11 @@
               position="-6 7 -15"
               animation="property: rotation; to: 90 360 80; loop: true; dur:3000; easing: linear"></a-box>
     </a-entity>
-
+    <a-camera>
+      <a-cursor color="white">
+          <a-sound src="#background" autoplay="true" loop="true"></a-sound>
+      </a-cursor>
+    </a-camera>
  
     
       
