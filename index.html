@@ -12,7 +12,7 @@
     <a-scene background="color: #050e20">
       <a-assets>
         <img id="dp" src="assets/photo.jpg">
-        <audio id="background" src="assets/spaceship.flac" preload="auto"></audio>
+        <audio id="background" src="assets/spaceship.flac" preload="auto"></audio> 
         <audio id="birds" src="assets/birds.wav" preload="auto"></audio>
         <audio id="waves" src="assets/waves.mp3" preload="auto"></audio>
         <audio id="rain" src="assets/rain.wav" preload="auto"></audio>
@@ -61,7 +61,7 @@
     <a-text width="1" height="1" value="Are those insects?" position="-0.5 1.4 -70" opacity="0.5"></a-text>
     <a-text width="1" height="1" value="You found" position="-0.5 1.4 -80" opacity="0.5"></a-text><a-text width="1" height="1" color= "#2779cd" value="Singing Birds" position="-0.25 1.4 -80" ></a-text>
     <a-text width="1" height="1" value="Close your eyes, enjoy for a while and let's see what you can find next" position="-0.5 1.2 -80" opacity="0.5"></a-text> 
-      <a-sound src="#birds" autoplay="true" loop="true" position="0 1.6 -80"></a-sound>
+      <!-- Birds audio problem-->
       
       
       <a-text width="1" height="1" value="What was that?" position="-0.5 1.4 -90" opacity="0.5"></a-text>
@@ -71,7 +71,7 @@
       <a-sound src="#waves" autoplay="true" loop="true" position="0 1.6 -120"></a-sound>
     <a-camera>
       <a-cursor opacity="0">
-          <a-sound src="#background" autoplay="true" loop="true" volume="0.4"></a-sound>
+          a-sound src="#background" autoplay="true" loop="true" volume="0.4"></a-sound>
       </a-cursor>
     </a-camera>
     
