@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import 'variables.css';
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: var(--line-height-base);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+a:hover { opacity: 0.65; }
+
+/* Page wrapper */
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--page-padding-y) var(--page-padding-x);
+}
+
+/* ── Header ── */
+.resume-header {
+  text-align: center;
+  margin-bottom: var(--spacing-section);
+}
+
+.resume-header h1 {
+  font-size: var(--font-size-name);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.6rem;
+  font-size: var(--font-size-small);
+  color: var(--color-muted);
+  list-style: none;
+}
+
+.header-links li:not(:last-child)::after {
+  content: '|';
+  margin-left: 0.6rem;
+  color: var(--color-rule);
+}
+
+/* ── Section ── */
+.resume-section {
+  margin-bottom: var(--spacing-section);
+}
+
+.resume-section h2 {
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-rule);
+  margin-bottom: 0.8rem;
+}
+
+/* ── Entry (two-column: content + date) ── */
+.entry {
+  margin-bottom: var(--spacing-entry);
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.entry-title {
+  font-weight: var(--font-weight-bold);
+}
+
+.entry-date {
+  font-size: var(--font-size-small);
+  color: var(--color-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.entry-subtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-muted);
+  margin-top: var(--spacing-tight);
+}
+
+/* ── Highlights list ── */
+.highlights {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.highlights li {
+  margin-bottom: var(--spacing-list-gap);
+  font-size: var(--font-size-base);
+}
+
+/* ── Skills ── */
+.skills-row {
+  margin-bottom: 0.4rem;
+  font-size: var(--font-size-base);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  :root {
+    --page-padding-x: 1.1rem;
+    --page-padding-y: 1.5rem;
+    --font-size-name: 1.7rem;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}

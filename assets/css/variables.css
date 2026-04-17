@@ -1,0 +1,28 @@
+:root {
+  /* Typography */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-size-name: 2.2rem;
+  --font-size-section: 1.1rem;
+  --font-size-base: 0.95rem;
+  --font-size-small: 0.82rem;
+  --font-weight-bold: 700;
+  --line-height-base: 1.6;
+
+  /* Colors */
+  --color-text: #111;
+  --color-muted: #555;
+  --color-link: #111;
+  --color-rule: #ccc;
+  --color-bg: #fff;
+
+  /* Spacing */
+  --spacing-section: 1.6rem;
+  --spacing-entry: 1rem;
+  --spacing-tight: 0.3rem;
+  --spacing-list-gap: 0.35rem;
+
+  /* Layout */
+  --max-width: 860px;
+  --page-padding-x: 2rem;
+  --page-padding-y: 2.5rem;
+}
